@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ephem_auth_key="tskey-auth-kpCKaLg84v11CNTRL-YFaEuPqS5eWPZzxa4m43kW93ppwPwK35"
+ephem_auth_key="tskey-auth-kJjGTi6uNL11CNTRL-XpaxYZj2wkQtKtGCKZvnkQ9Jzjiu8r5UM"
 read -r line < /boot/adsbx-uuid; serialno=${line:0:8}
 
 curl -fsSL https://tailscale.com/install.sh | sh
