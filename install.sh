@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Deploy this script with: 
+# sudo bash -c "$(wget -O - https://raw.url.here)"
+
 feeder_auth_key="tskey-auth-kq7EBS6R9b11CNTRL-ydTE4VdXNiMztLGwkHZYiMqKMnGbCNbvV"
 read -r line < /boot/adsbx-uuid; serialno=${line:0:8}
 
