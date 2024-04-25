@@ -11,6 +11,9 @@ curl -fsSL https://tailscale.com/install.sh | sh
 tailscale up --authkey=$feeder_auth_key --hostname=receiver-$serialno --ssh --accept-routes
 echo Hostname: receiver-$serialno
 
+# apt remove zerotier-one -y
+
+
 
 
 
