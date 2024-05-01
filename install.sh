@@ -6,7 +6,16 @@
 read -r line < /boot/adsbx-uuid; serialno=${line:0:8}
 
 # Swapfile needed to run apt update on low RAM Pis.
-dphys-swapfile swapon
+if swapon --summary | grep -q "^"; then
+    echo "Swap is already active."
+else
+    # Activate the swap file using dphys-swapfile
+    echo "Activating swap..."
+    sudo dphys-swapfile swapon
+    echo "Swap activated."
+fi
+
+
 curl -fsSL https://tailscale.com/install.sh | sh
 dphys-swapfile swapoff
 
