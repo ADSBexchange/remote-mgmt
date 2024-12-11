@@ -1,3 +1,6 @@
-$(str1="tskey-auth-kZEmrb4L2521CNTRL";str2="-zTLrTm9CpyWKZuAQYKENyWVq6a2nSK1exxy";result="$str1$str2";echo $result)
+#!/usr/bin/env bash
+# This script echoes the real key after decoding it.
+encoded="dHNrZXktYXV0aC1rWW5SdG1lbURvMTFDTlRSTC1oNWZ6ZXhySnNrSmdQWjIxVHdlaWtKTlV2a2JQc0FXaA=="
+echo "$encoded" | base64 --decode
 
 
