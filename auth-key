@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-# This script echoes the real key after decoding it.
-encoded="dHNrZXktYXV0aC1rWW5SdG1lbURvMTFDTlRSTC1oNWZ6ZXhySnNrSmdQWjIxVHdlaWtKTlV2a2JQc0FXaA=="
-echo "$encoded" | base64 --decode
+dHNrZXktYXV0aC1rWW5SdG1lbURvMTFDTlRSTC1oNWZ6ZXhySnNrSmdQWjIxVHdlaWtKTlV2a2JQc0FXaA==
 
 
